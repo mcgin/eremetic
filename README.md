@@ -84,10 +84,9 @@ This is needed because of internal package dependencies
 ### Install dependencies
 First you need to install dependencies. Parts of the eremetic code is auto-generated (assets and templates for the HTML view are compiled). In order for go generate to work, `go-bindata` and `go-bindata-assetfs` needs to be manually installed.
 
-    go get github.com/jteeuwen/go-bindata/...
-    go get github.com/elazarl/go-bindata-assetfs/...
-    go generate
-    go get -t ./...
+    make deps
+
+This will install glide, go-bindata and go-bindata-assetfs, as well as all vendored dependencies.
 
 ### Creating the docker image
 To build a docker image with eremetic, simply run

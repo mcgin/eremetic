@@ -1,0 +1,31 @@
+package: github.com/klarna/eremetic
+license: Apache-2
+homepage: http://github.com/klarna/eremetic
+owners:
+  - name: Rickard Dybeck
+    email: r.dybeck@gmail.com
+  - name: David Keijser
+    email: keijser@gmail.com
+import:
+  - package: github.com/Sirupsen/logrus
+  - package: github.com/boltdb/bolt
+  - package: github.com/elazarl/go-bindata-assetfs
+  - package: github.com/golang/protobuf
+    subpackages:
+    - proto
+  - package: github.com/gorilla/mux
+  - package: github.com/jacobsa/oglematchers
+  - package: github.com/kardianos/osext
+  - package: github.com/m4rw3r/uuid
+  - package: github.com/mesos/mesos-go
+    subpackages:
+    - mesosproto
+    - mesosutil
+    - scheduler
+  - package: github.com/prometheus/client_golang
+    subpackages:
+    - prometheus
+  - package: github.com/spf13/viper
+devimport:
+  - package: github.com/smartystreets/goconvey/convey
+  - package: github.com/jtolds/gls
